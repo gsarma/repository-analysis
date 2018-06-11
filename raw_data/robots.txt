@@ -1,0 +1,27 @@
+('temp-linecount-repo' will be deleted automatically)
+
+
+     100 files     200 files     300 files     400 files     500 files     600 files     607 text files.
+classified 584 filesDuplicate file check 584 files (546 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                               578 unique files.                              
+Counting:  84Counting:  138Counting:  110Counting:  131     145 files ignored.
+
+github.com/AlDanial/cloc v 1.76  T=1.11 s (416.5 files/s, 168545.8 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+C                              140          19113          22563          57192
+Bourne Shell                     8           4005           4516          28855
+MATLAB                         178           1833           4405           5647
+C/C++ Header                    92           2911          15431           5628
+C++                              5            808            784           4818
+m4                               5            515              0           2953
+Fortran 77                      11            151           1285           2794
+Python                          14             91             58            688
+Markdown                         4             81              0            196
+make                             1              8              1             20
+SWIG                             1              4              2             14
+JSON                             3              0              0             11
+YAML                             1              0              0              1
+-------------------------------------------------------------------------------
+SUM:                           463          29520          49045         108817
+-------------------------------------------------------------------------------

@@ -1,0 +1,28 @@
+('temp-linecount-repo' will be deleted automatically)
+
+
+     100 files     200 files     279 text files.
+classified 279 filesDuplicate file check 279 files (258 known unique)Unique:      100 files                                          Unique:      200 files                                               279 unique files.                              
+Counting:  62Counting:  28Counting:  69Counting:  5     116 files ignored.
+
+github.com/AlDanial/cloc v 1.76  T=1.05 s (156.1 files/s, 89902.7 lines/s)
+----------------------------------------------------------------------------------------
+Language                              files          blank        comment           code
+----------------------------------------------------------------------------------------
+JavaScript                               35          23762           7492          48989
+LESS                                     71           1311           1519           6232
+XML                                       7             30              7           1117
+Java                                     16            190             41            814
+CSS                                       3            220              3            798
+Velocity Template Language               14            114             36            727
+Maven                                     1             13              7            483
+JSON                                      9              1              0            389
+Python                                    3             10              0             71
+INI                                       1              5              0             18
+HTML                                      1              2              2             17
+Visualforce Component                     1              0              0             16
+YAML                                      1              1              0              6
+Markdown                                  1              4              0              5
+----------------------------------------------------------------------------------------
+SUM:                                    164          25663           9107          59682
+----------------------------------------------------------------------------------------

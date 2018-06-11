@@ -1,0 +1,28 @@
+('temp-linecount-repo' will be deleted automatically)
+
+
+     100 files     200 files     273 text files.
+classified 273 filesDuplicate file check 273 files (212 known unique)Unique:      100 files                                          Unique:      200 files                                               272 unique files.                              
+Counting:  7Counting:  1Counting:  62Counting:  60     145 files ignored.
+
+github.com/AlDanial/cloc v 1.76  T=1.06 s (122.2 files/s, 16743.2 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Scala                           20            425            233           4180
+MATLAB                          37            390            944           1846
+Python                          14            712           1353           1599
+C++                              7            159            138           1400
+Julia                            8             85             45           1222
+Markdown                        22            397              0           1145
+C                                4             98            144            430
+SWIG                             3             39             13            192
+JSON                             1              0              0            185
+C/C++ Header                     6             21              7            110
+make                             4             39              8             82
+YAML                             2             10             29             71
+Java                             1              6             11             43
+R                                1              1              0              5
+-------------------------------------------------------------------------------
+SUM:                           130           2382           2925          12510
+-------------------------------------------------------------------------------

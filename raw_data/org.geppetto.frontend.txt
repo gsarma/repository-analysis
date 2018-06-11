@@ -1,0 +1,28 @@
+('temp-linecount-repo' will be deleted automatically)
+
+
+     100 files     200 files     300 files     400 files     468 text files.
+classified 468 filesDuplicate file check 468 files (447 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                               461 unique files.                              
+Counting:  114Counting:  105Counting:  112Counting:  108      31 files ignored.
+
+github.com/AlDanial/cloc v 1.76  T=1.07 s (411.3 files/s, 86374.1 lines/s)
+-----------------------------------------------------------------------------------
+Language                         files          blank        comment           code
+-----------------------------------------------------------------------------------
+JavaScript                         232           9913          11135          48424
+LESS                               124           1840           1563           9255
+Java                                36            656            587           3965
+CSS                                 20            406            337           2645
+Maven                                1              6              0            488
+JSON                                 4              0              0            287
+XML                                  5             38             25            136
+Handlebars                           3              8              3            127
+YAML                                 2              1              6             80
+Bourne Shell                         2             11              0             68
+Markdown                             3             31              0             50
+HTML                                 5              9             13             38
+Visualforce Component                1              0              0             14
+INI                                  1              5              0             11
+-----------------------------------------------------------------------------------
+SUM:                               439          12924          13669          65588
+-----------------------------------------------------------------------------------

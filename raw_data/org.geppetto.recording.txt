@@ -1,0 +1,23 @@
+('temp-linecount-repo' will be deleted automatically)
+
+
+     100 files     200 files     300 files     400 files     500 files     600 files     700 files     800 files     900 files    1000 files    1100 files    1200 files    1300 files    1400 files    1500 files    1600 files    1700 files    1800 files    1900 files    2000 files    2100 files    2200 files    2300 files    2400 files    2500 files    2600 files    2700 files    2800 files    2900 files    3000 files    3100 files    3200 files    3300 files    3400 files    3500 files    3600 files    3700 files    3800 files    3900 files    4000 files    4100 files    4200 files    4300 files    4400 files    4500 files    4600 files    4700 files    4800 files    4900 files    5000 files    5100 files    5200 files    5300 files    5400 files    5500 files    5600 files    5700 files    5800 files    5900 files    6000 files    6100 files    6200 files    6300 files    6400 files    6402 text files.
+classified 6401 filesDuplicate file check 6401 files (175 known unique)Unique:      100 files                                              6397 unique files.                              
+Counting:  1593Counting:  1600Counting:  1600Counting:  1567      46 files ignored.
+
+github.com/AlDanial/cloc v 1.76  T=2.99 s (2126.3 files/s, 329740.4 lines/s)
+-------------------------------------------------------------------------------------
+Language                           files          blank        comment           code
+-------------------------------------------------------------------------------------
+Unity-Prefab                        6317         195827              0         783308
+JavaScript                             7            170            318           1373
+Python                                22            434            809           1226
+HTML                                   5            115              0           1126
+CSS                                    3            167             38            650
+DOS Batch                              1             29              1            212
+Patran Command Language                2              6              0            164
+make                                   1             28              6            143
+XML                                    2             46              0             92
+-------------------------------------------------------------------------------------
+SUM:                                6360         196822           1172         788294
+-------------------------------------------------------------------------------------

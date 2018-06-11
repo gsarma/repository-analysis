@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+GHUSER=openworm;
+
+curl "https://api.github.com/users/$GHUSER/repos?per_page=100" | grep -o 'git@github.com:openworm/[^"]*.git' > ./openworm_repo_list.txt
+
+sed -i.bak 's/git@github.com:openworm\/\([^"]*\).git/\1/' openworm_repo_list.txt
+
+declare -a repoArray
+mapfile -t repoArray < raw_data/openworm_repo_list.txt
+
+
+# use for loop to read all values and indexes
+for i in "${repoArray[@]}"
+do
+    ./cloc-git https://github.com/openworm/"${i}".git > ./raw_data/"${i}".txt
+done

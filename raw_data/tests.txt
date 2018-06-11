@@ -1,0 +1,17 @@
+('temp-linecount-repo' will be deleted automatically)
+
+
+      18 text files.
+classified 18 files      18 unique files.                              
+Counting:  0Counting:  2Counting:  2Counting:  1      14 files ignored.
+
+github.com/AlDanial/cloc v 1.76  T=1.02 s (4.9 files/s, 277.3 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Python                           3             23             22             91
+Dockerfile                       1             15             21             60
+Markdown                         1              8              0             42
+-------------------------------------------------------------------------------
+SUM:                             5             46             43            193
+-------------------------------------------------------------------------------

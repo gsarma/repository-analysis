@@ -1,0 +1,20 @@
+('temp-linecount-repo' will be deleted automatically)
+
+
+     100 files     200 files     300 files     400 files     500 files     600 files     700 files     800 files     900 files    1000 files    1100 files    1200 files    1300 files    1400 files    1500 files    1600 files    1648 text files.
+classified 1648 filesDuplicate file check 1648 files (779 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                          Unique:      600 files                                          Unique:      700 files                                              1333 unique files.                              
+Counting:  3Counting:  28Counting:  70Counting:  115    1433 files ignored.
+
+github.com/AlDanial/cloc v 1.76  T=1.44 s (149.7 files/s, 25498.0 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+XML                             61           2897           3124          16827
+Python                          38           2187            846           5707
+Markdown                        58            546              0           1979
+HTML                            57            513              0           1942
+Bourne Shell                     1             41             12             93
+YAML                             1             16             12             39
+-------------------------------------------------------------------------------
+SUM:                           216           6200           3994          26587
+-------------------------------------------------------------------------------

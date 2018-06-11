@@ -1,0 +1,13 @@
+('temp-linecount-repo' will be deleted automatically)
+
+
+       1 text file.
+       1 unique file.                              
+Counting:  1       1 file ignored.
+
+github.com/AlDanial/cloc v 1.76  T=1.01 s (1.0 files/s, 3.9 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Markdown                         1              1              0              3
+-------------------------------------------------------------------------------
