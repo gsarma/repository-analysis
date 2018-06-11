@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+## Retrieve the full list of OpenWorm repositories
+## This could be done in a single step
+GHUSER=openworm;
+curl "https://api.github.com/users/$GHUSER/repos?per_page=100" | grep -o 'git@github.com:openworm/[^"]*.git' > ./openworm_repo_list.txt
+sed -i.bak 's/git@github.com:openworm\/\([^"]*\).git/\1/' openworm_repo_list.txt
+
+## Read the repository names into an array
+declare -a repoArray
+mapfile -t repoArray < openworm_repo_list.txt
+
+# use for loop to read all values and indexes
+((n_elements=${#repoArray[@]}, max_index=n_elements - 1))
+
+for ((i = 0; i <= max_index; i++));
+do
+  echo "Analyzing ${repoArray[i]} . . . "
+  git clone --depth 1 https://github.com/openworm/"${repoArray[i]}".git temp-"${repoArray[i]}" &&
+  printf "('temp-"${repoArray[i]}"' will be deleted automatically)\n" &&
+  if [ $i -eq 0 ]; then
+    cloc --sql 1 --sql-project "${repoArray[i]}" temp-"${repoArray[i]}" | sqlite3 code.db
+  else
+    cloc --sql 1 --sql-project "${repoArray[i]}" --sql-append temp-"${repoArray[i]}" | sqlite3 code.db
+  fi
+  rm -rf temp-"${repoArray[i]}"
+
+  printf "$[ i+1 ] repositories analyzed. $[ max_index-i ] remaining.\n\n\n"
+done
