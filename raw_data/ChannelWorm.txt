@@ -1,27 +1,0 @@
-('temp-linecount-repo' will be deleted automatically)
-
-
-     100 files     200 files     300 files     400 files     500 files     600 files     700 files     800 files     900 files     951 text files.
-classified 950 filesDuplicate file check 950 files (870 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                          Unique:      600 files                                          Unique:      700 files                                          Unique:      800 files                                               921 unique files.                              
-Counting:  229Counting:  224Counting:  218Counting:  188     105 files ignored.
-
-github.com/AlDanial/cloc v 1.76  T=1.14 s (756.0 files/s, 218397.7 lines/s)
---------------------------------------------------------------------------------
-Language                      files          blank        comment           code
---------------------------------------------------------------------------------
-HTML                            220           4336           2301          90850
-JavaScript                      400          17192          21617          75435
-CSS                             143           1036           1092          24950
-Python                           57           1048            794           4376
-Markdown                         23            540              0           1879
-JSON                              3              0              0            353
-Sass                              1             25             10            114
-YAML                              3              7              6             62
-PHP                               1             11             27             20
-Bourne Again Shell                5              6             24             18
-SQL                               1              1              0             14
-Bourne Shell                      1              6              4              8
-INI                               1              0              0              4
---------------------------------------------------------------------------------
-SUM:                            859          24208          25875         198083
---------------------------------------------------------------------------------

@@ -1,21 +1,0 @@
-('temp-linecount-repo' will be deleted automatically)
-
-
-     100 files     200 files     300 files     358 text files.
-classified 358 filesDuplicate file check 358 files (348 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                               358 unique files.                              
-Counting:  3Counting:  0Counting:  27Counting:  1     328 files ignored.
-
-github.com/AlDanial/cloc v 1.76  T=1.06 s (29.1 files/s, 3592.5 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Java                            18            511            201           2443
-Maven                            1              9              4            365
-XML                              3             18              7             83
-YAML                             1              1              0             82
-XMI                              4              0              0             66
-JavaScript                       3              4              0             16
-Markdown                         1              6              0              8
--------------------------------------------------------------------------------
-SUM:                            31            549            212           3063
--------------------------------------------------------------------------------

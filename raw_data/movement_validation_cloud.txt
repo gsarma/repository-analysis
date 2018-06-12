@@ -1,27 +1,0 @@
-('temp-linecount-repo' will be deleted automatically)
-
-
-     100 files     200 files     300 files     400 files     500 files     600 files     700 files     800 files     900 files    1000 files    1100 files    1200 files    1300 files    1400 files    1500 files    1600 files    1700 files    1800 files    1900 files    2000 files    2100 files    2200 files    2300 files    2400 files    2500 files    2600 files    2700 files    2800 files    2900 files    2945 text files.
-classified 2944 filesDuplicate file check 2944 files (2442 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                          Unique:      600 files                                          Unique:      700 files                                          Unique:      800 files                                          Unique:      900 files                                          Unique:     1000 files                                          Unique:     1100 files                                          Unique:     1200 files                                          Unique:     1300 files                                          Unique:     1400 files                                          Unique:     1500 files                                          Unique:     1600 files                                          Unique:     1700 files                                          Unique:     1800 files                                          Unique:     1900 files                                          Unique:     2000 files                                          Unique:     2100 files                                          Unique:     2200 files                                          Unique:     2300 files                                          Unique:     2400 files                                              2871 unique files.                              
-Counting:  711Counting:  715Counting:  686Counting:  690     313 files ignored.
-
-github.com/AlDanial/cloc v 1.76  T=3.65 s (767.8 files/s, 186051.8 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-PO File                       1275          68263          86699         206372
-Python                        1328          45624          81256         171221
-JavaScript                      30           1673           1826           8673
-HTML                           130            306             34           2745
-CSS                             13            574            113           2218
-JSON                             9              2              0            844
-C                                1             39             22            178
-XML                              6              0              2             68
-Fish Shell                       1             11             13             50
-Markdown                         3             16              0             40
-YAML                             1              0              0             19
-C Shell                          1              9              6             19
-Bourne Shell                     4              3              0              7
--------------------------------------------------------------------------------
-SUM:                          2802         116520         169971         392454
--------------------------------------------------------------------------------
