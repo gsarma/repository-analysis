@@ -36,7 +36,7 @@ To re-populate the database with more recent data, first install cloc.  It can b
     choco install cloc                     # Windows with Chocolatey
     scoop install cloc                     # Windows with Scoop
 
-To begin the extraction process, simple run OW-repository analysis:
+To begin the extraction process, simply run OW-repository analysis:
 
     ./OW-repository-Analysis  
 
