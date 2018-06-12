@@ -36,7 +36,36 @@ To re-populate the database with more recent data, first install cloc.  It can b
     choco install cloc                     # Windows with Chocolatey
     scoop install cloc                     # Windows with Scoop
 
-The script OW-repo-analysis will do a shallow clone of every repository in order to run cloc.  These repositories are temporary and are automaticaly deleted at the end of each run.  There are over 60 OpenWorm repositories, so the process can take 5-10 minutes to complete.  
+To begin the extraction process, simple run OW-repository analysis:
+
+    ./OW-repository-Analysis  
+
+The script OW-repo-analysis will do a shallow clone of every repository in order to run cloc.  These repositories are temporary and are automaticaly deleted at the end of each run.  There are over 60 OpenWorm repositories, so the process can take 5-10 minutes to complete.  You will be updated as each repository is cloned, analyzed, and the corresponding database entries are added:  
+
+<pre>
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                               Dload  Upload   Total   Spent    Left  Speed
+100  372k  100  372k    0     0   493k      0 --:--:-- --:--:-- --:--:--  493k
+Analyzing behavioral_syntax . . .
+Cloning into 'temp-behavioral_syntax'...
+remote: Counting objects: 97, done.
+remote: Compressing objects: 100% (88/88), done.
+remote: Total 97 (delta 8), reused 57 (delta 3), pack-reused 0
+Unpacking objects: 100% (97/97), done.
+('temp-behavioral_syntax' will be deleted automatically)
+1 repositories analyzed. 64 remaining.
+
+
+Analyzing bionet . . .
+Cloning into 'temp-bionet'...
+remote: Counting objects: 206, done.
+remote: Compressing objects: 100% (157/157), done.
+remote: Total 206 (delta 58), reused 130 (delta 37), pack-reused 0
+Receiving objects: 100% (206/206), 5.92 MiB | 5.31 MiB/s, done.
+Resolving deltas: 100% (58/58), done.
+('temp-bionet' will be deleted automatically)
+2 repositories analyzed. 63 remaining.  
+</pre>
 
 <a name="Examples"></a>      []({{{1)
 # [Examples &#9650;](#___top "click to go to top of document")
