@@ -1,25 +1,0 @@
-('temp-linecount-repo' will be deleted automatically)
-
-
-     100 files     200 files     300 files     400 files     500 files     600 files     700 files     800 files     900 files    1000 files    1100 files    1200 files    1300 files    1400 files    1500 files    1600 files    1700 files    1800 files    1900 files    2000 files    2100 files    2200 files    2300 files    2400 files    2500 files    2500 text files.
-classified 2492 filesDuplicate file check 2492 files (1803 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                          Unique:      600 files                                          Unique:      700 files                                          Unique:      800 files                                          Unique:      900 files                                          Unique:     1000 files                                          Unique:     1100 files                                          Unique:     1200 files                                          Unique:     1300 files                                          Unique:     1400 files                                          Unique:     1500 files                                          Unique:     1600 files                                          Unique:     1700 files                                          Unique:     1800 files                                              2428 unique files.                              
-Counting:  182Counting:  180Counting:  603Counting:  288    1250 files ignored.
-
-github.com/AlDanial/cloc v 1.76  T=4.30 s (291.6 files/s, 167110.9 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-XML                           1032          44183           4160         638108
-Python                          84           3839           1438           9411
-SQL                              2            156            215           6659
-XSLT                             2            634            122           2706
-Markdown                        63            936              0           2403
-HTML                            57            513              0           1942
-Bourne Shell                     7             95             48            258
-YAML                             3             14             16             74
-Dockerfile                       1             18              0             42
-DOS Batch                        1             17              6             16
-RobotFramework                   1              0              0              6
--------------------------------------------------------------------------------
-SUM:                          1253          50405           6005         661625
--------------------------------------------------------------------------------

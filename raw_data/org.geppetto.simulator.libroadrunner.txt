@@ -1,19 +1,0 @@
-('temp-linecount-repo' will be deleted automatically)
-
-
-      16 text files.
-classified 16 files      15 unique files.                              
-Counting:  1Counting:  4Counting:  2Counting:  3       7 files ignored.
-
-github.com/AlDanial/cloc v 1.76  T=1.02 s (9.8 files/s, 625.4 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Maven                            1              0              1            175
-Java                             4             37            190            148
-XML                              3              8              5             54
-Markdown                         1              4              0              8
-YAML                             1              1              0              6
--------------------------------------------------------------------------------
-SUM:                            10             50            196            391
--------------------------------------------------------------------------------

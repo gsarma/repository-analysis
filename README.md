@@ -36,14 +36,44 @@ To re-populate the database with more recent data, first install cloc.  It can b
     choco install cloc                     # Windows with Chocolatey
     scoop install cloc                     # Windows with Scoop
 
-The script OW-repo-analysis will do a shallow clone of every repository in order to run cloc.  These repositories are temporary and are automaticaly deleted at the end of each run.  There are over 60 OpenWorm repositories, so the process can take 5-10 minutes to complete.  
+To begin the extraction process, simply run OW-repository analysis:
+
+    ./OW-repository-Analysis  
+
+The script OW-repo-analysis will do a shallow clone of every repository in order to run cloc.  These repositories are temporary and are automaticaly deleted at the end of each run.  There are over 60 OpenWorm repositories, so the process can take 5-10 minutes to complete.  You will be updated as each repository is cloned, analyzed, and the corresponding database entries are added:  
+
+<pre>
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                               Dload  Upload   Total   Spent    Left  Speed
+100  372k  100  372k    0     0   493k      0 --:--:-- --:--:-- --:--:--  493k
+Analyzing behavioral_syntax . . .
+Cloning into 'temp-behavioral_syntax'...
+remote: Counting objects: 97, done.
+remote: Compressing objects: 100% (88/88), done.
+remote: Total 97 (delta 8), reused 57 (delta 3), pack-reused 0
+Unpacking objects: 100% (97/97), done.
+('temp-behavioral_syntax' will be deleted automatically)
+1 repositories analyzed. 64 remaining.
+
+
+Analyzing bionet . . .
+Cloning into 'temp-bionet'...
+remote: Counting objects: 206, done.
+remote: Compressing objects: 100% (157/157), done.
+remote: Total 206 (delta 58), reused 130 (delta 37), pack-reused 0
+Receiving objects: 100% (206/206), 5.92 MiB | 5.31 MiB/s, done.
+Resolving deltas: 100% (58/58), done.
+('temp-bionet' will be deleted automatically)
+2 repositories analyzed. 63 remaining.  
+</pre>
 
 <a name="Examples"></a>      []({{{1)
 # [Examples &#9650;](#___top "click to go to top of document")
 **What are the longest Python files over all projects?**
 
 <pre>
-prompt> sqlite3 code.db 'select project, file, nCode from t where language = "Python" order by nCode desc limit 20;' | ./sqlite_formatter
+prompt> sqlite3 code.db 'select project, file, nCode from t
+                where language = "Python" order by nCode desc limit 20;' | ./sqlite_formatter
 
 Project                         File                                                                                                     nCode
 _______________________________ ________________________________________________________________________________________________________ _____
@@ -72,9 +102,8 @@ movement_cloud                  temp-movement_cloud/webworm/migrations/0002_db_2
 **What are the most popular languages in each project?**
 
 <pre>
-prompt> sqlite3 code.db 'select project, language, sum(nCode) as SumCode from t
-                         group by project,language
-                         order by project,SumCode desc;' | ./sqlite_formatter
+prompt> sqlite3 code.db 'select project, language,sum(nCode) as SumCode from t
+                group by project,language order by project,SumCode desc;' | ./sqlite_formatter
 
 Project                              Language                   SumCode
 ____________________________________ __________________________ _______
@@ -512,10 +541,8 @@ wormbrowser                          JSON                             1
 **Which Python source files with more than 500 lines have a comment ratio below 5%?**
 
 <pre>
-prompt> sqlite3 code.db 'select project, file, nCode, nComment,
-                         (100.0*nComment)/(nComment+nCode) as comment_ratio from t
-                         where language="Python" and nCode > 500 and
-                         comment_ratio < 5 order by comment_ratio;' | ./sqlite_formatter
+prompt> sqlite3 code.db 'select project, file, nCode,nComment,(100.0*nComment)/(nComment+nCode) as comment_ratio from t
+                where language="Python" and nCode > 500 and comment_ratio < 5 order by comment_ratio;' | ./sqlite_formatter
 
 Project                   File                                                                                                nCode nComment comment_ratio     
 _________________________ ___________________________________________________________________________________________________ _____ ________ _________________
@@ -528,11 +555,11 @@ movement_validation_cloud temp-movement_validation_cloud/djangodev/lib/python2.7
 CElegansNeuroML           temp-CElegansNeuroML/CElegans/pythonScripts/c302/tune/c302NetTuner.py                                 733       28 3.67936925098555
 </pre>
 
-**Which files in each project have the most code lines?**
+**Which files in each project have the most lines of code?**
 
 <pre>
 prompt> sqlite3 code.db 'select project,file,max(nCode) as nL from t
-                         group by project order by nL desc;' | ./sqlite_formatter
+                group by project order by nL desc;' | ./sqlite_formatter
 
 Project                              File                                                                                                              nL     
 ____________________________________ _________________________________________________________________________________________________________________ ______
@@ -605,7 +632,7 @@ org.geppetto.maven                   temp-org.geppetto.maven/README.md          
 
 <pre>
 prompt> sqlite3 code.db 'select project,file,max(nComment) as nL from t
-                         group by project order by nL desc limit 10;' | ./sqlite_formatter
+                group by project order by nL desc limit 10;' | ./sqlite_formatter
 
 Project                         File                                                                                                nL   
 _______________________________ ___________________________________________________________________________________________________ ____

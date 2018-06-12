@@ -1,20 +1,0 @@
-('temp-linecount-repo' will be deleted automatically)
-
-
-     100 files     200 files     300 files     400 files     500 files     600 files     700 files     800 files     900 files    1000 files    1100 files    1200 files    1269 text files.
-classified 1266 filesDuplicate file check 1266 files (1202 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                          Unique:      600 files                                          Unique:      700 files                                          Unique:      800 files                                          Unique:      900 files                                          Unique:     1000 files                                          Unique:     1100 files                                          Unique:     1200 files                                              1266 unique files.                              
-Counting:  17Counting:  314Counting:  14Counting:  291     634 files ignored.
-
-github.com/AlDanial/cloc v 1.76  T=4.18 s (152.1 files/s, 140880.1 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-XML                            627          23055            606         564129
-Python                           5            243            264            826
-YAML                             1              0              0             19
-Markdown                         1              7              0             15
-RobotFramework                   1              0              0              6
-Bourne Shell                     1              0              2              1
--------------------------------------------------------------------------------
-SUM:                           636          23305            872         564996
--------------------------------------------------------------------------------
