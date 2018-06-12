@@ -43,9 +43,8 @@ The script OW-repo-analysis will do a shallow clone of every repository in order
 **What are the longest Python files over all projects?**
 
 <pre>
-prompt> sqlite3 code.db 'select project, file, nCode from
-  t where language = "Python" order by nCode
-  desc limit 20;' | ./sqlite_formatter
+prompt> sqlite3 code.db 'select project, file, nCode from t
+                where language = "Python" order by nCode desc limit 20;' | ./sqlite_formatter
 
 Project                         File                                                                                                     nCode
 _______________________________ ________________________________________________________________________________________________________ _____
