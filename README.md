@@ -555,7 +555,7 @@ movement_validation_cloud temp-movement_validation_cloud/djangodev/lib/python2.7
 CElegansNeuroML           temp-CElegansNeuroML/CElegans/pythonScripts/c302/tune/c302NetTuner.py                                 733       28 3.67936925098555
 </pre>
 
-**Which files in each project have the most code lines?**
+**Which files in each project have the most lines of code?**
 
 <pre>
 prompt> sqlite3 code.db 'select project,file,max(nCode) as nL from t
