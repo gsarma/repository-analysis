@@ -43,7 +43,9 @@ The script OW-repo-analysis will do a shallow clone of every repository in order
 **What are the longest Python files over all projects?**
 
 <pre>
-prompt> sqlite3 code.db 'select project, file, nCode from t where language = "Python" order by nCode desc limit 20;' | ./sqlite_formatter
+prompt> sqlite3 code.db 'select project, file, nCode from
+  t where language = "Python" order by nCode
+  desc limit 20;' | ./sqlite_formatter
 
 Project                         File                                                                                                     nCode
 _______________________________ ________________________________________________________________________________________________________ _____
@@ -72,9 +74,8 @@ movement_cloud                  temp-movement_cloud/webworm/migrations/0002_db_2
 **What are the most popular languages in each project?**
 
 <pre>
-prompt> sqlite3 code.db 'select project, language, sum(nCode) as SumCode from t
-                         group by project,language
-                         order by project,SumCode desc;' | ./sqlite_formatter
+prompt> sqlite3 code.db 'select project, language,sum(nCode) as SumCode from t
+                group by project,language order by project,SumCode desc;' | ./sqlite_formatter
 
 Project                              Language                   SumCode
 ____________________________________ __________________________ _______
@@ -512,10 +513,8 @@ wormbrowser                          JSON                             1
 **Which Python source files with more than 500 lines have a comment ratio below 5%?**
 
 <pre>
-prompt> sqlite3 code.db 'select project, file, nCode, nComment,
-                         (100.0*nComment)/(nComment+nCode) as comment_ratio from t
-                         where language="Python" and nCode > 500 and
-                         comment_ratio < 5 order by comment_ratio;' | ./sqlite_formatter
+prompt> sqlite3 code.db 'select project, file, nCode,nComment,(100.0*nComment)/(nComment+nCode) as comment_ratio from t
+                where language="Python" and nCode > 500 and comment_ratio < 5 order by comment_ratio;' | ./sqlite_formatter
 
 Project                   File                                                                                                nCode nComment comment_ratio     
 _________________________ ___________________________________________________________________________________________________ _____ ________ _________________
@@ -532,7 +531,7 @@ CElegansNeuroML           temp-CElegansNeuroML/CElegans/pythonScripts/c302/tune/
 
 <pre>
 prompt> sqlite3 code.db 'select project,file,max(nCode) as nL from t
-                         group by project order by nL desc;' | ./sqlite_formatter
+                group by project order by nL desc;' | ./sqlite_formatter
 
 Project                              File                                                                                                              nL     
 ____________________________________ _________________________________________________________________________________________________________________ ______
@@ -605,7 +604,7 @@ org.geppetto.maven                   temp-org.geppetto.maven/README.md          
 
 <pre>
 prompt> sqlite3 code.db 'select project,file,max(nComment) as nL from t
-                         group by project order by nL desc limit 10;' | ./sqlite_formatter
+                group by project order by nL desc limit 10;' | ./sqlite_formatter
 
 Project                         File                                                                                                nL   
 _______________________________ ___________________________________________________________________________________________________ ____
